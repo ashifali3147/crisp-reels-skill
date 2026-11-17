@@ -83,15 +83,29 @@ Tested on two real reels:
 
 ## Install
 
-Requires [Claude Code](https://claude.com/claude-code), `ffmpeg`/`ffprobe` on your PATH, and `python3` (standard library only).
+Requires `ffmpeg`/`ffprobe` on your PATH and `python3` (standard library only).
+
+**Claude Code (plugin, recommended):** inside a session, run
+
+```
+/plugin install crisp-reels --marketplace ashifali3147/crisp-reels-skill
+```
+
+On older Claude Code versions, add the marketplace first, then install:
+
+```
+/plugin marketplace add ashifali3147/crisp-reels-skill
+/plugin install crisp-reels@crisp-reels-skill
+```
+
+**Manual / other agents:** the skill is a standard `SKILL.md` folder, so it also works in other agents that read Agent Skills (Codex CLI, Cursor, Gemini CLI, Copilot and others). Copy the folder into that agent's skills directory, for Claude Code:
 
 ```bash
 git clone https://github.com/ashifali3147/crisp-reels-skill.git
-```
-
-```bash
 cp -r crisp-reels-skill/skills/instagram-export ~/.claude/skills/
 ```
+
+The main workflow only needs a shell with ffmpeg and Python. The optional Edits-app guide needs the Edits desktop app's `metapilot-native` MCP server connected to your agent; without it, export from Edits by hand and the rest of the skill works the same.
 
 That's it. It loads automatically when you say things like:
 

@@ -1,0 +1,23 @@
+{
+  "name": "crisp-reels",
+  "displayName": "Crisp Reels",
+  "version": "1.0.0",
+  "description": "Keep Instagram Reels as crisp on Instagram as in the editor: diagnose the export (60fps duplicates, full-range colour, bitrate, HDR), cancel editor-vs-export colour drift, encode a one-pass 1080x1920 H.264 upload file with ffmpeg, verify it, and give the upload checklist.",
+  "author": {
+    "name": "Ashif Ali",
+    "url": "https://github.com/ashifali3147"
+  },
+  "homepage": "https://github.com/ashifali3147/crisp-reels-skill",
+  "repository": "https://github.com/ashifali3147/crisp-reels-skill",
+  "license": "MIT",
+  "keywords": [
+    "instagram",
+    "reels",
+    "video",
+    "ffmpeg",
+    "export",
+    "video-quality",
+    "color-correction"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}

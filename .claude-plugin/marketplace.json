@@ -1,0 +1,15 @@
+{
+  "name": "crisp-reels-skill",
+  "description": "Ashif Ali's Claude Code plugins: Crisp Reels, sharp Instagram Reel exports with ffmpeg.",
+  "owner": {
+    "name": "Ashif Ali",
+    "url": "https://github.com/ashifali3147"
+  },
+  "plugins": [
+    {
+      "name": "crisp-reels",
+      "source": "./",
+      "description": "Export edited videos as sharp Instagram Reels: diagnose, fix colour drift, encode, verify."
+    }
+  ]
+}
