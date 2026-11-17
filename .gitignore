@@ -1,0 +1,41 @@
+# Markdown is excluded by default; only the skill's own docs are published
+*.md
+!/README.md
+!/skills/instagram-export/SKILL.md
+!/skills/instagram-export/references/*.md
+
+# Assistant / agent files
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
+.github/copilot-instructions.md
+.mcp.json
+*.prompt
+prompts/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Build output and caches
+__pycache__/
+*.pyc
+dist/
+build/
+*.skill
+
+# Media working files (sample images in docs/images are published)
+*.mp4
+*.mov
+*.MOV
+*.mp3
+drift.json
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
