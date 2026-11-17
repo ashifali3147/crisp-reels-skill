@@ -37,7 +37,7 @@ Most "it got downgraded after export" problems aren't Instagram's fault. They co
 
 ## What the skill does
 
-<p align="center"><img src="docs/images/pipeline.svg" alt="Master, diagnose, fit drift, encode, verify" width="100%"></p>
+<p align="center"><img src="docs/images/pipeline.png" alt="Master, diagnose, fit drift, encode, verify" width="100%"></p>
 
 1. **Master:** gets the best export the editor can make (native resolution, 30 fps, high bitrate).
 2. **Diagnose:** `diagnose.py` reports duplicated frames, real versus tagged colour range, bitrate, HDR and audio, in plain words.
@@ -74,7 +74,7 @@ Left half: normal export. Right half: exported with the skill. Same frame, same 
 
 ## Measured, not eyeballed
 
-<p align="center"><img src="docs/images/results.svg" alt="Colour error versus editor preview drops from 6.2 to 0.7, 3.0 to 0.4 and 1.1 to 0.2" width="90%"></p>
+<p align="center"><img src="docs/images/results.png" alt="Colour error versus editor preview drops from 6.2 to 0.7, 3.0 to 0.4 and 1.1 to 0.2" width="90%"></p>
 
 Tested on two real reels:
 
@@ -98,11 +98,10 @@ On older Claude Code versions, add the marketplace first, then install:
 /plugin install crisp-reels@crisp-reels-skill
 ```
 
-**Manual / other agents:** the skill is a standard `SKILL.md` folder, so it also works in other agents that read Agent Skills (Codex CLI, Cursor, Gemini CLI, Copilot and others). Copy the folder into that agent's skills directory, for Claude Code:
+**Manual / other agents:** the skill is a standard `SKILL.md` folder, so it also works in other agents that read Agent Skills (Codex CLI, Cursor, Gemini CLI, Copilot and others). Clone the repo and copy `skills/instagram-export` into your agent's skills folder (see your agent's docs for where that is):
 
 ```bash
 git clone https://github.com/ashifali3147/crisp-reels-skill.git
-cp -r crisp-reels-skill/skills/instagram-export ~/.claude/skills/
 ```
 
 The main workflow only needs a shell with ffmpeg and Python. The optional Edits-app guide needs the Edits desktop app's `metapilot-native` MCP server connected to your agent; without it, export from Edits by hand and the rest of the skill works the same.

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Measure how an editor's exported file drifts in colour from the editor's own preview,
 and produce an ffmpeg lutrgb filter that cancels it.
 

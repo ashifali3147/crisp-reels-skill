@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Inspect an exported video master and flag what will hurt it on Instagram.
 
 Usage: diagnose.py <video> [--json]

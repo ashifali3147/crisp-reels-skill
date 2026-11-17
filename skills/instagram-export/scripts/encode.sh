@@ -1,4 +1,3 @@
-#!/bin/bash
 # Make Instagram upload files from a high-quality master in a single encode each.
 #
 # Usage: encode.sh <master> <out_dir> <base_name> [--lut "<lutrgb filter>"] [--no-4k] [--fps N]

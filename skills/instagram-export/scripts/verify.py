@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Check an Instagram upload file against the target spec.
 
 Usage: verify.py <file> [--master MASTER]
