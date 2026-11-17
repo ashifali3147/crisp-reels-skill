@@ -41,7 +41,7 @@ Then `export` with an absolute path under `~/Movies`, and poll `exportStatus` (u
 `setFrameRate` changes the user's project. Duplicate it first (from the home screen, `duplicateProject`, then `renameProject` to "<name> (export test)") unless the user wants the original changed.
 
 ## Getting preview reference frames
-`frameSheet` with `id: ""`, `path: ""`, `times: "1,3,6,..."`, `columns: 6`, `cellWidth: 270` renders the edit as the app shows it. The result's image is saved under `~/.claude/projects/.../tool-results/*.jpg` (and the app's own copy under `~/Library/Containers/com.burbn.basel.mac/.../frame-sheets/`). Each cell has a timestamp label in its top-left corner, so keep `--skip-top 0.1` in `fit_drift.py`. Pass the sheet with `--sheet <file> --cols 6 --rows N --times <same list>`.
+`frameSheet` with `id: ""`, `path: ""`, `times: "1,3,6,..."`, `columns: 6`, `cellWidth: 270` renders the edit as the app shows it. The tool result gives the path of the saved sheet image; use that file. Each cell has a timestamp label in its top-left corner, so keep `--skip-top 0.1` in `fit_drift.py`. Pass the sheet with `--sheet <file> --cols 6 --rows N --times <same list>`.
 
 ## Music
 Licensed tracks (`importPath: obfuscatedWindow`) can't be analysed (`audioLevels` fails). Saved Instagram original audio (`importPath: fullFile`) can be, with `audioLevels`/`audioOnsets`. Use `beatMarkers` for the beat grid of either.

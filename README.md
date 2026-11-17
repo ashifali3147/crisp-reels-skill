@@ -19,7 +19,7 @@
 ---
 
 <p align="center">
-  <img src="docs/images/before-after.svg" alt="Palm trees: blocky, pixelated normal export on the left; crisp export with the skill on the right" width="80%">
+  <img src="docs/images/before-after.jpg" alt="Palm trees: blocky, pixelated normal export on the left; crisp export with the skill on the right" width="80%">
 </p>
 <p align="center"><sub>Same footage. A few export settings make the difference between mush and crystal clear.</sub></p>
 
